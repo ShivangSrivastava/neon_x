@@ -1,4 +1,4 @@
-```markdown
+
 # neon_x
 
 A Flutter package that provides a collection of custom widgets and extensions for a neomorphic design style. This package includes custom icons, text styling options, and a timeline widget.
@@ -78,5 +78,5 @@ NxTimeLine(
 
 <!-- For more information, check the [example](https://github.com/ShivangSrivastava/neon_x) folder.  -->
 Feel free to contribute or report issues on the [GitHub repository](https://github.com/ShivangSrivastava/neon_x).
-```
+
 

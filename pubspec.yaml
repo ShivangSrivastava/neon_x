@@ -8,7 +8,6 @@ environment:
   flutter: ">=3.0.0"
 
 dependencies:
-  carousel_slider: ^4.2.1
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.9
