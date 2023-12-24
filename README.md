@@ -1,39 +1,82 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+```markdown
+# neon_x
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A Flutter package that provides a collection of custom widgets and extensions for a neomorphic design style. This package includes custom icons, text styling options, and a timeline widget.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **NxIcon**: A custom widget for displaying SVG icons with optional size, color, and scale.
+
+- **NxFontSize**: Extension on VxTextBuilder for easy scaling of font sizes.
+
+- **NxFontWeight**: Extension on VxTextBuilder for setting font weights.
+
+- **NxFonts**: Extension on VxTextBuilder for setting custom fonts from Google Fonts.
+
+- **NxTimeLine**: A timeline widget with customizable colors, size, and interactive taps.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use this package, add `neon_x` as a dependency in your `pubspec.yaml` file.
+
+```yaml
+dependencies:
+  neon_x: 
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### NxIcon
 
 ```dart
-const like = 'sample';
+import 'package:neon_x/neon_x.dart';
+
+NxIcon('assets/icon.svg', size: 24, color: Colors.blue, scaleValue: 1.2)
+```
+
+### NxFontSize
+
+```dart
+import 'package:neon_x/neon_x.dart';
+
+'Hello'.text.s20.make()
+```
+
+### NxFontWeight
+
+```dart
+import 'package:neon_x/neon_x.dart';
+
+'Bold Text'.text.w6.make()
+```
+
+### NxFonts
+
+```dart
+import 'package:neon_x/neon_x.dart';
+
+'Text with Poppins Font'.text.poppins.make()
+```
+
+### NxTimeLine
+
+```dart
+import 'package:neon_x/neon_x.dart';
+
+NxTimeLine(
+  currentPosition: 2,
+  size: 5,
+  filledColor: Colors.blue,
+  lineColor: Colors.grey,
+  onTap: (index) {
+    // Handle tap on timeline
+  },
+)
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+<!-- For more information, check the [example](https://github.com/ShivangSrivastava/neon_x) folder.  -->
+Feel free to contribute or report issues on the [GitHub repository](https://github.com/ShivangSrivastava/neon_x).
+```
+
