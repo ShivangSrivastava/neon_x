@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:neon_x/neon_x.dart';
 
-
 extension NxFontWeight on VxTextBuilder {
   VxTextBuilder get w1 => fontWeight(FontWeight.w100);
   VxTextBuilder get w2 => fontWeight(FontWeight.w200);
